@@ -57,13 +57,14 @@ SSH, also known as Secure Shell or Secure Socket Shell, is a network protocol th
 
 ## Concepts I Didn't Understand
 
-* **Systemd**
-
+* **UFW**
+`ufw` is a firewall configuration tool.  It is a command line tool, but also has some GUI features.  The Linux kernel in Ubuntu provides a packet filtering system called `netfilter`, and the traditional interface for manipulating `netfilter` are the `iptables` suite of commands.  Learning how to use `iptables` can take time, as it is a complex tool.  UFW was developed as a simplified way to manipulate `netfilter`.  I consider it similar to how `apt` was developed as a simplified way to use `dpkg`  It allows or blocks incoming and outgoing connections to and from the server. You can block ports, IPs or even entire subnets using UFW.
 
 * **Systemctl**
+The `systemctl` command is a utility which is responsible for examining and controlling the `systemd` system and service manager.  Using `systemctl`, we can check the status of any systemd service.  It can start, stop, restart, enable, or disable a service.
 
+* **Systemd**
+`systemd` is a software tool used in Linux-based operating systems that manages system services and processes, initializes the system, and handles system events and logs.  It also provides a number of other useful features, such as dependency-based service management, on-demand starting of services, and socket activation.
 
-* **Virtual hosts**
-
-
-* **Log file**
+* **a2ensite**
+`a2ensite` is a command in Apache that enables virtual hosts on Linux systems.  When you create a virtual host, you can use the `a2ensite` command to enable it. This command creates a symbolic link from the site's configuration file in the /etc/apache2/sites-available directory to the /etc/apache2/sites-enabled directory. This enables the site and makes it available for Apache to serve content from.
