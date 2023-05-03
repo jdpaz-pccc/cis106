@@ -44,7 +44,7 @@ The [] wildcard matches a single character in a range
   - List all files that do not have a vowel after the letter f
     - ls f[!aeiou]*
 
-## Brace Expansions
+### Brace Expansions
 
 Brace expansion is a feature of bash that allows you to generate arbitrary strings to use with commands.
 
@@ -56,3 +56,16 @@ Examples:
 - This will rename the three files in the current directory.
   - `mv testFile{1,2,3}.txt newFile{1,2,3}.txt`
 
+## Practice
+
+### Practice 5
+
+![Practice 5](practice5.png)
+
+### Practice 6
+
+![Practice 6](practice6.png)
+
+### Practice 7
+
+![Practice 7](practice7.png)
